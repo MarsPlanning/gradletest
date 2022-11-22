@@ -43,13 +43,15 @@
    Do not remove this header. If this header is removed it means the pull request hasn't
    been reviewed properly.
 -->
-<verification-metadata xmlns="https://schema.gradle.org/dependency-verification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://schema.gradle.org/dependency-verification https://schema.gradle.org/dependency-verification/dependency-verification-1.1.xsd">
+<verification-metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://schema.gradle.org/dependency-verification" xsi:schemaLocation="https://schema.gradle.org/dependency-verification https://schema.gradle.org/dependency-verification/dependency-verification-1.1.xsd">
    <configuration>
       <verify-metadata>false</verify-metadata>
       <verify-signatures>true</verify-signatures>
       <key-servers enabled="false"/>
       <trusted-artifacts>
          <trust group="gradle" name="gradle"/>
+         <trust group="org.ysb33r.gradle"/>
+         <trust group="gradle.plugin.org.ysb33r.gradle"/>
          <trust file=".*-javadoc[.]jar" regex="true"/>
          <trust file=".*-sources[.]jar" regex="true"/>
       </trusted-artifacts>
